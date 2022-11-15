@@ -11,3 +11,5 @@ all:
 
 deploy:
 
+run:
+	npm run serve

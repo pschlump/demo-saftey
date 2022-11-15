@@ -1,25 +1,68 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
+import SendHelpView from '../views/SendHelpView.vue'
+import HelpLocationsView from '../views/HelpLocationsView.vue'
+import SponsorConnectView from '../views/SponsorConnectView.vue'
+import SignInView from '../views/SignInView.vue'
+import SignUpView from '../views/SignUpView.vue'
+import AboutView from '../views/AboutView.vue'
+
+//		<router-link to="/send-help">Send Help</router-link> |
+//		<router-link to="/help-locaitons">Help Locaitons</router-link> |
+//		<router-link to="/sponsor-connect">Sponsor Connect</router-link> |
+//		<router-link to="/sign-in">Sign In</router-link>
+//		<router-link to="/sign-up">Sign Up</router-link>
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+	{
+		path: '/',
+		name: 'home',
+		component: HomeView
+	},
+	{
+		path: '/send-help',
+		name: 'SendHelp',
+		component: SendHelpView
+	},
+	{
+		path: '/help-locations',
+		name: 'HelpLocations',
+		component: HelpLocationsView
+	},
+	{
+		path: '/sponsor-connect',
+		name: 'SponsorConnect',
+		component: SponsorConnectView 
+	},
+	{
+		path: '/sign-in',
+		name: 'SignIn',
+		component: SignInView
+	},
+	{
+		path: '/sign-up',
+		name: 'SignUp',
+		component: SignUpView
+	},
+//	{
+//		path: '/about',
+//		name: 'about',
+//		// route level code-splitting
+//		// this generates a separate chunk (about.[hash].js) for this route
+//		// which is lazy-loaded when the route is visited.
+//		component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+//	}
+	{
+		path: '/about',
+		name: 'about',
+		component: AboutView
+	},
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+	history: createWebHistory(process.env.BASE_URL),
+	routes
 })
 
 export default router

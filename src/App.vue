@@ -1,30 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+	<h1> Safe Space </h1>
+	<nav>
+		<router-link to="/send-help">Send Help</router-link> |
+		<router-link to="/help-locaitons">Help Locaitons</router-link> |
+		<router-link to="/sponsor-connect">Sponsor Connect</router-link> |
+		<router-link to="/sign-in">Sign In</router-link> |
+		<router-link to="/sign-up">Sign Up</router-link>
+	</nav>
+	<router-view/>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
 }
 
 nav {
-  padding: 30px;
+	padding: 30px;
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+	font-weight: bold;
+	color: #2c3e50;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+	color: #42b983;
 }
 </style>
