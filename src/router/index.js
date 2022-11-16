@@ -9,7 +9,7 @@ import SignUpView from '../views/SignUpView.vue'
 import AboutView from '../views/AboutView.vue'
 
 //		<router-link to="/send-help">Send Help</router-link> |
-//		<router-link to="/help-locaitons">Help Locaitons</router-link> |
+//		<router-link to="/help-locations">Help Locaitons</router-link> |
 //		<router-link to="/sponsor-connect">Sponsor Connect</router-link> |
 //		<router-link to="/sign-in">Sign In</router-link>
 //		<router-link to="/sign-up">Sign Up</router-link>
@@ -45,14 +45,6 @@ const routes = [
 		name: 'SignUp',
 		component: SignUpView
 	},
-//	{
-//		path: '/about',
-//		name: 'about',
-//		// route level code-splitting
-//		// this generates a separate chunk (about.[hash].js) for this route
-//		// which is lazy-loaded when the route is visited.
-//		component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-//	}
 	{
 		path: '/about',
 		name: 'about',
@@ -65,4 +57,4 @@ const router = createRouter({
 	routes
 })
 
-export default router
+export default router;
