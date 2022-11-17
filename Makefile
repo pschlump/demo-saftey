@@ -13,3 +13,10 @@ deploy:
 
 run:
 	npm run serve
+
+
+install_bootstrap:
+	npm install --save bootstrap
+	npm install --save @popperjs/core
+	npm install vue-simple-password-meter@next --save
+
