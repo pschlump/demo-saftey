@@ -2,7 +2,7 @@
 	<footer class="page-footer font-small blue pt-4">
 
 		<div class="container-fluid text-md-left">
-			<img class="small-top-left" src="../img/logo.svg">
+			<img class="small-top-left" src="../img/logo.jpg">
 
 			<div class="row">
 

@@ -1,7 +1,7 @@
 <template>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-blue">
 		<div class="container">
-			<a class="navbar-brand" href="/home"><img id="logo_img" alt="Safe Spaces Logo" src="../img/logo.svg"></a>
+			<a class="navbar-brand" href="/home"><img id="logo_img" alt="Safe Spaces Logo" src="../img/logo.jpg"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>

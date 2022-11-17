@@ -102,7 +102,7 @@ export default {
 	min-width: 200px;
 	font-weight: 700;
 	font-size: 18px;
-	background-color: white;
+	background-color: #77bc3f;
 }
 .btn-one {
 	position: absolute;

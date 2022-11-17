@@ -1,6 +1,6 @@
 <template>
 	<div class="logo">
-		<img src="img/logo.svg" class="logo-main-page">
+		<img src="img/logo.jpg" class="logo-main-page">
 		<h1> Safe Space </h1>
 	</div>
 </template>

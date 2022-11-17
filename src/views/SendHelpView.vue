@@ -3,8 +3,8 @@
 		<PageHeader />
 		<div class="top">&nbsp;</div>
 
-		<h1> Locations </h1>
 		<!--
+		<h1> Locations </h1>
 		<div class="center">
 			<router-link to="/send-help">Send Help</router-link> 
 		</div>
@@ -15,15 +15,26 @@
 			<router-link to="/sponsor-connect">Sponsor Connect</router-link> 
 		</div>
 		-->
+		<h2> Help Button </h2>
 		<div class="center">
-			<button @click="signIn()" class="btn btn-primary btn-two btn-std">
-				Help button
-			</button>
-			<button @click="signUp()" class="btn btn-primary btn-one btn-std">
-				Sign Up
+			<button @click="sendHelp()" class="btn btn-primary btn-two btn-std btn-red">
+				Send Police
 			</button>
 		</div>
+		<div class="between">&nbsp;</div>
 		<h1> Include Help! </h1>
+		<div class="center">
+			<select class="x-form-control help-type" v-model="help_type_st" name="help_type_st" @change="changeHelpType($event)">
+				<option value="" disabled> </option>
+				<option value="FIRE">Fire</option>
+				<option value="AMBULANCE">Ambulance</option>
+			</select> 
+		</div>
+		<div class="center">
+			<button @click="otherHelp()" class="btn btn-primary btn-one btn-std btn-green">
+				Help Type
+			</button>
+		</div>
 		<h1> Count Down... </h1>
 		<PageFooter />
 	</div>
@@ -45,6 +56,7 @@ export default {
     , data () {
         return {
             placeholder: ''
+			, help_type_st: ''
         }
     }
     , created () {
@@ -59,11 +71,15 @@ export default {
     }
 	, methods: {
         ...mapActions('account', ['login', 'logout'])
-		, signIn () {
-			this.$router.push({ name: 'SignIn'});
+		, sendHelp () {
+			// this.$router.push({ name: 'SignIn'});
 		}
-		, signUp () {
-			this.$router.push({ name: 'SignUp'});
+		, helpLocaitons () {
+			// this.$router.push({ name: 'SignUp'});
+		}
+		, otherHelp () {
+		}
+		, changeHelpType () {
 		}
 		, handleSubmit () {
 		}
@@ -73,6 +89,11 @@ export default {
 </script>
 
 <style scoped>
+.send-help-box {
+	border: 1px solid black;
+	height: 80px;
+	width: 98%;
+}
 .send-help {
 	height: 100vh;
 }
@@ -86,6 +107,12 @@ export default {
 	justify-content: center;
 	align-items: center;
 }
+.help-type {
+	min-width: 200px;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
 .btn-next {
 	x-position: absolute;
 	x-bottom: 20px;
@@ -95,7 +122,21 @@ export default {
 	min-width: 200px;
 	font-weight: 700;
 	font-size: 18px;
-	background-color: white;
+	background-color: #77bc3f;
+}
+.btn-red {
+	background-color: #f377bc;
+	x-background-color: #bc3f77;
+}
+.btn-red {
+	height: 100px;
+	width: 80vw;
+	max-width: 300px;
+}
+.btn-green {
+	height: 100px;
+	width: 80vw;
+	max-width: 300px;
 }
 .btn-one {
 	x-position: absolute;

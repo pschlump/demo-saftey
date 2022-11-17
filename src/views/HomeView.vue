@@ -1,9 +1,5 @@
 <template>
 	<div class="home">
-		<!--
-		<img src="img/logo.svg" class="logo-main-page">
-		<h1> Safe Space </h1>
-		-->
 		<Logo />
 		<!--
 		<nav>
@@ -103,7 +99,7 @@ console.log ( "v4", router );
 	min-width: 200px;
 	font-weight: 700;
 	font-size: 18px;
-	background-color: white;
+	background-color: #77bc3f;
 }
 .btn-one {
 	position: absolute;
